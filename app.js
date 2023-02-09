@@ -11,6 +11,7 @@ const MYSQL_DB_HOST = 'containers-us-west-156.railway.app'
 const MYSQL_DB_USER = 'root'
 const MYSQL_DB_PASSWORD = 'nXHt2myrS7CBr7GcwdGO'
 const MYSQL_DB_NAME = 'railway'
+const MYSQL_DB_PORT = 7011
 
 /**
  * Aqui declaramos los flujos hijos, los flujos se declaran de atras para adelante, es decir que si tienes un flujo de este tipo:
@@ -147,6 +148,7 @@ const main = async() => {
         user: MYSQL_DB_USER,
         database: MYSQL_DB_NAME,
         password: MYSQL_DB_PASSWORD,
+        port: MYSQL_DB_PORT
     })
     const adapterFlow = createFlow([flowPrincipal, flowStringBtn, flowFormulario])
     const adapterProvider = createProvider(BaileysProvider)
