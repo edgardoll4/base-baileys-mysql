@@ -24,7 +24,7 @@ const MYSQL_DB_PORT = 7011
  *
  * Primero declaras los submenus 1.1 y 2.1, luego el 1 y 2 y al final el principal.
  */
-
+const flowPrincipal;
 const flowFormulario = addKeyword(['formulario'])
     .addAnswer(
         ['Hola!', 'Escriba su *Nombre* para generar su solicitud'], { capture: true, buttons: [{ body: '❌ Cancelar solicitud' }] },
@@ -141,7 +141,7 @@ const flowImg = addKeyword(['imagen', 'img']).addAnswer('Este mensaje envia una 
     delay: (0)
 }, null, [flowGracias, flowPrincipal])
 
-const flowPrincipal = addKeyword(['hola', 'ole', 'alo', 'Voler', 'regresar', 'volver al flujo principal'])
+flowPrincipal = addKeyword(['hola', 'ole', 'alo', 'Voler', 'regresar', 'volver al flujo principal'])
     .addAnswer('🙌 Hola bienvenido a este *Chatbot*')
     .addAnswer(
         [
