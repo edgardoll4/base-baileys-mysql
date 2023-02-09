@@ -63,7 +63,7 @@ const flowFormulario = addKeyword(['formulario'])
         }
     )
 
-const flowStringBtn = addKeyword('btn').addAnswer('Este mensaje envia tres botones', {
+const flowStringBtn = addKeyword('btn', 'boton', 'botón').addAnswer('Este mensaje envia tres botones', {
     buttons: [{
             body: 'Boton 1',
             id: 'token-asd'
@@ -104,10 +104,10 @@ const flowTuto = addKeyword(['tutorial', 'tuto']).addAnswer(
         '\n*2* Para siguiente paso.',
     ],
     null,
-    null, [flowSecundario]
+    null, [flowSecundario, flowPrincipal]
 )
 
-const flowGracias = addKeyword(['gracias', 'grac']).addAnswer(
+const flowGracias = addKeyword(['gracias', 'grac', 'salir']).addAnswer(
     [
         '🚀 Puedes aportar tu granito de arena a este proyecto',
         '[*opencollective*] https://opencollective.com/bot-whatsapp',
@@ -127,9 +127,21 @@ const flowDiscord = addKeyword(['discord']).addAnswer(
 
 const flowImg = addKeyword(['imagen', 'img']).addAnswer('Este mensaje envia una imagen', {
     media: 'https://content.app-sources.com/s/71425562438133975/uploads/Images/Foto4-9413559.png',
-})
+}).addAnswer('Para volver al fluo principal', {
+    buttons: [{
+            body: 'regresar',
+            id: 'token-asd'
+        },
+        {
+            body: 'salir',
+            id: 'token-123'
+        }
+    ],
+    capture: true,
+    delay: (0)
+}, null, [flowGracias, flowPrincipal])
 
-const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
+const flowPrincipal = addKeyword(['hola', 'ole', 'alo', 'Voler', 'regresar', 'volver al flujo principal'])
     .addAnswer('🙌 Hola bienvenido a este *Chatbot*')
     .addAnswer(
         [
