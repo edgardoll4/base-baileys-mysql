@@ -7,10 +7,10 @@ const MySQLAdapter = require('@bot-whatsapp/database/mysql')
 /**
  * Declaramos las conexiones de MySQL
  */
-const MYSQL_DB_HOST = 'primary.mysql-bot--f75cdvb8fc2l.addon.code.run'
-const MYSQL_DB_USER = '8b8d22091b02f004'
-const MYSQL_DB_PASSWORD = '968582c99e978a3324aece05600fb9'
-const MYSQL_DB_NAME = 'c63744d94384'
+const MYSQL_DB_HOST = 'containers-us-west-156.railway.app'
+const MYSQL_DB_USER = 'root'
+const MYSQL_DB_PASSWORD = 'nXHt2myrS7CBr7GcwdGO'
+const MYSQL_DB_NAME = 'railway'
 
 /**
  * Aqui declaramos los flujos hijos, los flujos se declaran de atras para adelante, es decir que si tienes un flujo de este tipo:
