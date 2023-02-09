@@ -103,7 +103,7 @@ const flowTuto = addKeyword(['tutorial', 'tuto']).addAnswer(
         '\n*2* Para siguiente paso.',
     ],
     null,
-    null, [flowSecundario, flowPrincipal]
+    null, [flowSecundario]
 )
 
 const flowGracias = addKeyword(['gracias', 'grac', 'salir']).addAnswer(
