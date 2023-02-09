@@ -1,0 +1,670 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3A74DE7FE58D22A9F308',
+    participant: undefined
+  },
+  messageTimestamp: 1675953122,
+  pushName: 'José Hernández',
+  message: Message {
+    conversation: 'Esto es una prueba de imagen',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Esto es una prueba de imagen',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3AD77DC05F8985ABE91E',
+    participant: undefined
+  },
+  messageTimestamp: 1675953137,
+  pushName: 'José Hernández',
+  message: Message {
+    conversation: 'Podemos ver que la imagen no se envío',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Podemos ver que la imagen no se envío',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3A664BB4190BBFA4CBB1',
+    participant: undefined
+  },
+  messageTimestamp: 1675953139,
+  pushName: 'José Hernández',
+  message: Message {
+    conversation: 'Jajajajja',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Jajajajja',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584246112393@s.whatsapp.net',
+    fromMe: false,
+    id: '2C2AB16E654B9DB525B0FF1834642FC3',
+    participant: undefined
+  },
+  messageTimestamp: 1675953255,
+  pushName: 'Milla Blanco',
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'Hola',
+      previewType: 0,
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  from: '584246112393'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584246112393@s.whatsapp.net',
+    fromMe: false,
+    id: '4693121E4D82119A6D6F2439F71FBB07',
+    participant: undefined
+  },
+  messageTimestamp: 1675953259,
+  pushName: 'Milla Blanco',
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'Img',
+      previewType: 0,
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Img',
+  from: '584246112393'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3A99C77CADBA3754E00E',
+    participant: undefined
+  },
+  messageTimestamp: 1675953901,
+  pushName: 'José Hernández',
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3AF71BEBE6F284B29E40',
+    participant: undefined
+  },
+  messageTimestamp: 1675953916,
+  pushName: 'José Hernández',
+  message: Message {
+    conversation: 'Img',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Img',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3A788E1D1081BFD94D00',
+    participant: undefined
+  },
+  messageTimestamp: 1675953922,
+  pushName: 'José Hernández',
+  message: Message {
+    conversation: 'Imagen',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Imagen',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3AECA8BE29F334D1CABD',
+    participant: undefined
+  },
+  messageTimestamp: 1675953937,
+  pushName: 'José Hernández',
+  message: Message {
+    audioMessage: AudioMessage {
+      url: 'https://mmg.whatsapp.net/v/t62.7117-24/32989071_163058063154981_1115762741154751759_n.enc?ccb=11-4&oh=01_AdRils1zOn6oRN2zTWaP1QM11tQX7ztOu9HW4Nfb-0HRzA&oe=640C7F1D&mms3=true',
+      mimetype: 'audio/ogg; codecs=opus',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      seconds: 3,
+      ptt: true,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7117-24/32989071_163058063154981_1115762741154751759_n.enc?ccb=11-4&oh=01_AdRils1zOn6oRN2zTWaP1QM11tQX7ztOu9HW4Nfb-0HRzA&oe=640C7F1D',
+      mediaKeyTimestamp: [Long],
+      streamingSidecar: [Uint8Array],
+      waveform: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3A4CECD8A1E34393CEE3',
+    participant: undefined
+  },
+  messageTimestamp: 1675953962,
+  pushName: 'José Hernández',
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'Se lo quitaste ?',
+      contextInfo: [ContextInfo]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Se lo quitaste ?',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3A6D62E0AB62E407CFD6',
+    participant: undefined
+  },
+  messageTimestamp: 1675953968,
+  pushName: 'José Hernández',
+  message: Message {
+    conversation: 'Doc',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Doc',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3A9725718AFAB82BEC83',
+    participant: undefined
+  },
+  messageTimestamp: 1675953975,
+  pushName: 'José Hernández',
+  message: Message {
+    conversation: 'Gracias',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Gracias',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3A183AF8989205848342',
+    participant: undefined
+  },
+  messageTimestamp: 1675954008,
+  pushName: 'José Hernández',
+  message: Message {
+    audioMessage: AudioMessage {
+      url: 'https://mmg.whatsapp.net/v/t62.7117-24/19253461_226023616538961_3746968503370651478_n.enc?ccb=11-4&oh=01_AdS1hHW8U_E8nV6DvT-c0LjcW0a8rxMgBem10bFlti-MAg&oe=640C5E35&mms3=true',
+      mimetype: 'audio/ogg; codecs=opus',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      seconds: 7,
+      ptt: true,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7117-24/19253461_226023616538961_3746968503370651478_n.enc?ccb=11-4&oh=01_AdS1hHW8U_E8nV6DvT-c0LjcW0a8rxMgBem10bFlti-MAg&oe=640C5E35',
+      mediaKeyTimestamp: [Long],
+      streamingSidecar: [Uint8Array],
+      waveform: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3A31C123506F42FFD1D7',
+    participant: undefined
+  },
+  messageTimestamp: 1675954009,
+  pushName: 'José Hernández',
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3A29B15ACEC754885902',
+    participant: undefined
+  },
+  messageTimestamp: 1675954015,
+  pushName: 'José Hernández',
+  message: Message {
+    conversation: 'Imagen',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Imagen',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3ADB41400B6C235402D7',
+    participant: undefined
+  },
+  messageTimestamp: 1675954031,
+  pushName: 'José Hernández',
+  message: Message {
+    audioMessage: AudioMessage {
+      url: 'https://mmg.whatsapp.net/v/t62.7117-24/56113591_150187277844193_5545690522195292577_n.enc?ccb=11-4&oh=01_AdRTLMGvrsEQVpkeeNUVJnj5cRgya-pWt23MDhm3Djwa4A&oe=640C7D79&mms3=true',
+      mimetype: 'audio/ogg; codecs=opus',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      seconds: 8,
+      ptt: true,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7117-24/56113591_150187277844193_5545690522195292577_n.enc?ccb=11-4&oh=01_AdRTLMGvrsEQVpkeeNUVJnj5cRgya-pWt23MDhm3Djwa4A&oe=640C7D79',
+      mediaKeyTimestamp: [Long],
+      streamingSidecar: [Uint8Array],
+      waveform: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0DE116A5347301FB1',
+    participant: undefined
+  },
+  messageTimestamp: 1675954755,
+  pushName: 'José Hernández',
+  message: Message {
+    conversation: 'cual video',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'cual video',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB037F3002F11B19D41',
+    participant: undefined
+  },
+  messageTimestamp: 1675954770,
+  pushName: 'José Hernández',
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'compa se ve super borroso',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'compa se ve super borroso',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0D8321988E39D21B9',
+    participant: undefined
+  },
+  messageTimestamp: 1675955834,
+  pushName: 'José Hernández',
+  message: Message {
+    conversation: 'jajajajjaja yo pense quera tu camara',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'jajajajjaja yo pense quera tu camara',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0B8879856073C9524',
+    participant: undefined
+  },
+  messageTimestamp: 1675955837,
+  pushName: 'José Hernández',
+  message: Message {
+    conversation: 'que estaba mala',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'que estaba mala',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB03BBED7E8C1B01F5C',
+    participant: undefined
+  },
+  messageTimestamp: 1675955869,
+  pushName: 'José Hernández',
+  message: Message {
+    conversation: 'pero esa pagina es de que? del chatbot?',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'pero esa pagina es de que? del chatbot?',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3A7AECCB582F2DD1D7EA',
+    participant: undefined
+  },
+  messageTimestamp: 1675956325,
+  pushName: 'José Hernández',
+  message: Message {
+    conversation: 'Ah ok',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Ah ok',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3A64398E924C04F1161C',
+    participant: undefined
+  },
+  messageTimestamp: 1675956330,
+  pushName: 'José Hernández',
+  message: Message {
+    conversation: 'Bueno después vemos eso',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Bueno después vemos eso',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3AB594F6D90F12FC5E63',
+    participant: undefined
+  },
+  messageTimestamp: 1675956355,
+  pushName: 'José Hernández',
+  message: Message {
+    audioMessage: AudioMessage {
+      url: 'https://mmg.whatsapp.net/v/t62.7117-24/41084875_560777312651852_3403061913862847629_n.enc?ccb=11-4&oh=01_AdQGhDbtdNfQhbhj9WQvROdJ0ApHzflwMF2lbPuPmLGzoQ&oe=640C6FF8&mms3=true',
+      mimetype: 'audio/ogg; codecs=opus',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      seconds: 21,
+      ptt: true,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7117-24/41084875_560777312651852_3403061913862847629_n.enc?ccb=11-4&oh=01_AdQGhDbtdNfQhbhj9WQvROdJ0ApHzflwMF2lbPuPmLGzoQ&oe=640C6FF8',
+      mediaKeyTimestamp: [Long],
+      streamingSidecar: [Uint8Array],
+      waveform: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584121653951@s.whatsapp.net',
+    fromMe: false,
+    id: 'D5D9F326E844762C2D05DFAC3CC647DA',
+    participant: undefined
+  },
+  messageTimestamp: 1675957343,
+  pushName: 'Luisimaria',
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'Estamos por la panadería',
+      previewType: 0,
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Estamos por la panadería',
+  from: '584121653951'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB07CCA0B672D4E4881',
+    participant: undefined
+  },
+  messageTimestamp: 1675958311,
+  pushName: 'José Hernández',
+  message: Message {
+    conversation: 'ok dale me avisas cuando lo puede ver en alguna url publcia',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'ok dale me avisas cuando lo puede ver en alguna url publcia',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0430CF046CD8AE0A8',
+    participant: undefined
+  },
+  messageTimestamp: 1675958314,
+  pushName: 'José Hernández',
+  message: Message {
+    conversation: 'publica',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'publica',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB02FB15DC386C51601',
+    participant: undefined
+  },
+  messageTimestamp: 1675958580,
+  pushName: 'José Hernández',
+  message: Message {
+    conversation: 'y no se púede?',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'y no se púede?',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3A6E8971DCD43CF16873',
+    participant: undefined
+  },
+  messageTimestamp: 1675959526,
+  pushName: 'José Hernández',
+  message: Message {
+    audioMessage: AudioMessage {
+      url: 'https://mmg.whatsapp.net/v/t62.7117-24/30687384_884865385899999_2467062144395881066_n.enc?ccb=11-4&oh=01_AdRmZOd3Ll-33CXjv4zPdS-ArF1wplrNzVe6yrAemKDb6w&oe=640CA43E&mms3=true',
+      mimetype: 'audio/ogg; codecs=opus',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      seconds: 5,
+      ptt: true,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7117-24/30687384_884865385899999_2467062144395881066_n.enc?ccb=11-4&oh=01_AdRmZOd3Ll-33CXjv4zPdS-ArF1wplrNzVe6yrAemKDb6w&oe=640CA43E',
+      mediaKeyTimestamp: [Long],
+      streamingSidecar: [Uint8Array],
+      waveform: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '',
+  from: '56957858732'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '56957858732@s.whatsapp.net',
+    fromMe: false,
+    id: '3A70432EB9FD238D16E0',
+    participant: undefined
+  },
+  messageTimestamp: 1675959685,
+  pushName: 'José Hernández',
+  message: Message {
+    audioMessage: AudioMessage {
+      url: 'https://mmg.whatsapp.net/v/t62.7117-24/30696509_159028796894966_3248475583328450160_n.enc?ccb=11-4&oh=01_AdSs6-9hX8JS0XvIRByc5jABGZerDC4OtCPJh-f07qkyxg&oe=640C79DC&mms3=true',
+      mimetype: 'audio/ogg; codecs=opus',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      seconds: 11,
+      ptt: true,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7117-24/30696509_159028796894966_3248475583328450160_n.enc?ccb=11-4&oh=01_AdSs6-9hX8JS0XvIRByc5jABGZerDC4OtCPJh-f07qkyxg&oe=640C79DC',
+      mediaKeyTimestamp: [Long],
+      streamingSidecar: [Uint8Array],
+      waveform: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '',
+  from: '56957858732'
+}
