@@ -140,7 +140,7 @@ const flowImg = addKeyword(['imagen', 'img']).addAnswer('Este mensaje envia una 
     delay: (0)
 }, null, [flowGracias])
 
-const flowPrincipal = addKeyword(['hola', 'ole', 'alo', 'Voler', 'regresar', 'volver al flujo principal'])
+const flowPrincipal = addKeyword(['halo', 'ole', 'alo', 'Volver', 'regresar', 'volver al flujo principal'])
     .addAnswer('🙌 Hola bienvenido a este *Chatbot*')
     .addAnswer(
         [
