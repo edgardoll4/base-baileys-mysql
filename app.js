@@ -145,9 +145,8 @@ const flowPrincipal = addKeyword(['halo', 'ole', 'alo', 'Volver', 'regresar', 'v
     .addAnswer(
         [
             'te comparto los siguientes links de interes sobre el proyecto',
-            '👉 *doc* para ver la documentación',
-            '👉 *gracias*  para ver la lista de videos',
-            '👉 *discord* unirte al discord',
+            '',
+            'bienvenido',
         ],
         null,
         null, [flowDocs, flowGracias, flowTuto, flowDiscord, flowImg]
