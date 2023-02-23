@@ -129,11 +129,11 @@ const flowImg = addKeyword(['imagen', 'img']).addAnswer('Este mensaje envia una 
 }).addAnswer('Para volver al fluo principal', {
     buttons: [{
             body: 'regresar',
-            id: 'token-asd'
+            id: 'token-asd',
         },
         {
             body: 'salir',
-            id: 'token-123'
+            id: 'token-123',
         }
     ],
     capture: true,
