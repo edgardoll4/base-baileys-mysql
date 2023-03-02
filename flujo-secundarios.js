@@ -11,9 +11,9 @@ const flowGracias = addKeyword(['gracias', 'grac', 'salir']).addAnswer(
     null
 )
 
-const flowImgTasa = addKeyword(['imagen', 'img']).addAnswer('Este mensaje envia una imagen', {
-    media: 'https://content.app-sources.com/s/71425562438133975/uploads/Images/Foto4-9413559.png',
-}).addAnswer('Para volver al fluo principal', {
+const flowImgTasa = addKeyword(['tasa del dia','Ver tasa del día']).addAnswer('Tasa del día', {
+    media: 'https://drive.google.com/file/d/19dQ5te_ocfVau2-X_vgvsezvgIGZcJkz/view',
+}).addAnswer('¿Qué desea hacer?', {
     buttons: [{
             body: 'menu principal',
             id: 'token-menu',
@@ -27,7 +27,7 @@ const flowImgTasa = addKeyword(['imagen', 'img']).addAnswer('Este mensaje envia 
     delay: (0)
 }, null, [flowGracias])
 
-const flowTasa = addKeyword(['Tasa','tasa']).addAnswer(
+const flowTasa = addKeyword(['Ta5sa','tas5a']).addAnswer(
     ['Elija un país:','Venezuela','Perú','Chile','Argentina','Colombia','Ecuador', 'Otro', '\n Para siguiente saber la tasa del mismo.'],
     {
         buttons: [{
@@ -107,13 +107,13 @@ const flowStatistics = addKeyword(['estadistica', 'metrica'])
             \nTotal de plantillas enviadas: ${total}
             \n\nBotones presionados:
             \nAsistir: ${asistir}
-            \nAnular: ${anular}
-            \nAmbos: ${ambos}
-            \nSin acciones: ${sinAccion}
+            Anular: ${anular}
+            Ambos: ${ambos}
+            Sin acciones: ${sinAccion}
             \n\n*Estaditicas del estatus de los botones presionados*,
             \nOK: ${okPlanner}
-            \nError: ${errorPlanner}
-            \nCantidad de mensajes de textos escritos por el usuario: ${msgUser}`)
+            Error: ${errorPlanner}
+            Cantidad de mensajes de textos escritos por el usuario: ${msgUser}`)
 
     },
     [flowGracias])
@@ -123,7 +123,19 @@ const flowInfo = addKeyword(['info', 'informacion', 'keoplanner', 'Información 
         '🚀 Para más información le invito a ir al siguiente link.',
         '\n[*Keo planner*] https://www.keoplanner.com',
     ],
-    {media:'https://content.app-sources.com/s/71425562438133975/uploads/Images/Logo_PNG-9411025.png'}
+    {media:'https://content.app-sources.com/s/71425562438133975/uploads/Images/Logo_PNG-9411025.png'},
+    nul,
+    [flowGracias]
+)
+
+const flowTransfe = addKeyword(['trasnferencia', 'Datos para tansferir']).addAnswer(
+    [
+        '🚀 Para más información le invito a ir al siguiente link.',
+        '\n[*Keo planner*] https://www.keoplanner.com',
+    ],
+    {media:'https://content.app-sources.com/s/71425562438133975/uploads/Images/Logo_PNG-9411025.png'},
+    nul,
+    [flowGracias]
 )
 
 let nombre;
@@ -187,5 +199,6 @@ module.exports = {
     flowImgTasa,
     flowFormulario,
     flowStatistics,
-    flowInfo
+    flowInfo,
+    flowTransfe
 }
