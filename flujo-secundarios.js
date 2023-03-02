@@ -1,6 +1,6 @@
 const { addKeyword } = require('@bot-whatsapp/bot');
-const { luxon } = require('luxon');
-const { axios } = require('axios');
+const  luxon  = require('luxon');
+const  axios  = require('axios');
 
 const flowGracias = addKeyword(['gracias', 'grac', 'salir']).addAnswer(
     [

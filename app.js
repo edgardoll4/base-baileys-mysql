@@ -2,6 +2,9 @@ const { createBot, createProvider, createFlow, addKeyword } = require('@bot-what
 
 const { flowGracias, flowTasa, flowInfo, flowFormulario, flowStatistics } = require('./flujo-secundarios')
 
+const  luxon  = require('luxon');
+const  axios  = require('axios');
+
 const QRPortalWeb = require('@bot-whatsapp/portal')
 const BaileysProvider = require('@bot-whatsapp/provider/baileys')
 const MySQLAdapter = require('@bot-whatsapp/database/mysql')
