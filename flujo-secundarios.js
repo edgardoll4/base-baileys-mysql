@@ -1,11 +1,13 @@
-const{ addKeyword } = require('@bot-whatsapp/bot')
+const { addKeyword } = require('@bot-whatsapp/bot');
+const { luxon } = require('luxon');
+const { axios } = require('axios');
 
 const flowGracias = addKeyword(['gracias', 'grac', 'salir']).addAnswer(
     [
         '🚀 Puedes probar nuestro periodo de prueba',
         '\n[*Keo planner*] https://www.keoplanner.com',
     ],
-    {media:'https://www.keoplanner.com/assets/img/planner/logo.svg'},
+    {media:'https://content.app-sources.com/s/71425562438133975/uploads/Images/Logo_PNG-9411025.png'},
     null
 )
 
@@ -60,6 +62,7 @@ const flowImg = addKeyword(['imagen', 'img']).addAnswer('Este mensaje envia una 
 }, null, [flowGracias, flowImgTasa])
 
 const flowStatistics = addKeyword(['estadistica', 'metrica'])
+    .addAnswer('Estamos procesando su solicitud.', {delay:(5)})
     .addAnswer(['*Estadisticas de los ultimos 7 días*'],
     {
         media:'https://mpnecuador.files.wordpress.com/2014/06/website-analytics.png',
@@ -68,18 +71,20 @@ const flowStatistics = addKeyword(['estadistica', 'metrica'])
                 body: 'salir',
                 id: 'token-salir',
             }
-        ]
+        ],
+        delay: (5)
     },
     async (ctx,{flowDynamic}) =>{
-        dataInit = Date();
-        dataEnd = dateInit[Symbol.toPrimitive]('number');
+        console.log('Mensaje: ',ctx)
+        dataInit = luxon.DateTime.now().toUnixInteger()*1000;
+        // dataEnd = dateInit[Symbol.toPrimitive]('number');
         okPlanner = '';
         errorPlanner = '';
         msgUser = '';
         total = '';
         const statistic = await axios({
             method:'get',
-            url:'https://api-ws-prod.herokuapp.com/api/chat/statistics-button-pressed/?end-time=' + dataEnd + '&start-time=' + (Number(dataEnd) - 604800000),
+            url:'https://api-ws-prod.herokuapp.com/api/chat/statistics-button-pressed/?end-time=' + dataInit + '&start-time=' + (Number(dataInit) - 604800000),
         })
 
         const statisticHour = await axios({
@@ -121,7 +126,7 @@ const flowInfo = addKeyword(['info', 'informacion']).addAnswer(
         '🚀 Para más información le invito a ir al siguiente link.',
         '\n[*Keo planner*] https://www.keoplanner.com',
     ],
-    {media:'https://www.keoplanner.com/assets/img/planner/logo.svg'},
+    {media:'https://content.app-sources.com/s/71425562438133975/uploads/Images/Logo_PNG-9411025.png'},
     null
 )
 
