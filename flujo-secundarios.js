@@ -115,16 +115,8 @@ const flowStatistics = addKeyword(['estadistica', 'metrica'])
             \nError: ${errorPlanner}
             \nCantidad de mensajes de textos escritos por el usuario: ${msgUser}`)
 
-    }
-    ).addAnswer('Esperamos sea de utilidad la infomación',{
-        buttons: [
-            {
-                body: 'salir',
-                id: 'token-salir',
-            },
-        ],   
-        media: 'https://mpnecuador.files.wordpress.com/2014/06/website-analytics.png'
-    },null, [flowGracias])
+    },
+    [flowGracias])
 
 const flowInfo = addKeyword(['info', 'informacion', 'keoplanner']).addAnswer(
     [
