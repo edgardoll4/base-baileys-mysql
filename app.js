@@ -1,6 +1,6 @@
 const { createBot, createProvider, createFlow, addKeyword } = require('@bot-whatsapp/bot')
 
-const { flowGracias, flowTasa, flowInfo, flowFormulario, flowStatistics } = require('./flujo-secundarios')
+const { flowGracias, flowImgTasa, flowInfo, flowFormulario, flowStatistics } = require('./flujo-secundarios')
 
 const  luxon  = require('luxon');
 const  axios  = require('axios');
@@ -41,7 +41,7 @@ const flowPrincipal = addKeyword(['halo', 'ole', 'alo', 'Volver', 'regresar', 'm
         null
     ).addAnswer(['Tenemos las siguientes opciones para seguir interactuando'], {
         buttons: [{
-                body: 'Saber la Tasa del día',
+                body: 'Tasa del día',
                 id: 'token-tasa'
             },
             {
@@ -55,7 +55,7 @@ const flowPrincipal = addKeyword(['halo', 'ole', 'alo', 'Volver', 'regresar', 'm
         ],
         // capture: true,
         delay: (0)
-    },null,[flowGracias, flowInfo, flowTasa])
+    },null,[flowGracias, flowInfo, flowImgTasa])
 
 const flowAdmin = addKeyword(['admin', 'administracion', 'administración', 'administrador'])
     .addAnswer('🙌 Bienvenido a este *Chatbot*',{media:'https://drive.google.com/file/d/1UDaVnUpZOhEC9lmn9X4eiSMNntR7PwcL/view?usp=share_link'})
@@ -82,7 +82,7 @@ const flowAdmin = addKeyword(['admin', 'administracion', 'administración', 'adm
         ],
         // capture: true,
         delay: (0)
-    },null,[flowGracias, flowInfo, flowStatistics])
+    },null,[flowGracias, flowInfo, flowStatistics, flowFormulario])
 
 
 const main = async() => {

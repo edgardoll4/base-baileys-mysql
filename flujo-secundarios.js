@@ -45,7 +45,7 @@ const flowTasa = addKeyword(['Tasa','tasa']).addAnswer(
     null, [flowGracias]
 )
 
-const flowImg = addKeyword(['imagen', 'img']).addAnswer('Este mensaje envia una imagen', {
+const flowImg = addKeyword(['tasa', 'Tasa del día']).addAnswer('Este mensaje envia una imagen', {
     media: 'https://content.app-sources.com/s/71425562438133975/uploads/Images/Foto4-9413559.png',
 }).addAnswer('Para volver al fluo principal', {
     buttons: [{
@@ -118,7 +118,7 @@ const flowStatistics = addKeyword(['estadistica', 'metrica'])
     },
     [flowGracias])
 
-const flowInfo = addKeyword(['info', 'informacion', 'keoplanner']).addAnswer(
+const flowInfo = addKeyword(['info', 'informacion', 'keoplanner', 'Información sobre Keoplanner']).addAnswer(
     [
         '🚀 Para más información le invito a ir al siguiente link.',
         '\n[*Keo planner*] https://www.keoplanner.com',
