@@ -58,7 +58,7 @@ const flowPrincipal = addKeyword(['halo', 'ole', 'alo', 'Volver', 'regresar', 'm
     },null,[flowGracias, flowInfo, flowTasa])
 
 const flowAdmin = addKeyword(['admin', 'administracion', 'administración', 'administrador'])
-    .addAnswer('🙌 Bienvenido a este *Chatbot*')
+    .addAnswer('🙌 Bienvenido a este *Chatbot*',{media:'https://drive.google.com/file/d/1UDaVnUpZOhEC9lmn9X4eiSMNntR7PwcL/view?usp=share_link'})
     .addAnswer(
         [
             '¡Hola soy Keo su asistente virtual de Planner!',
