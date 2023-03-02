@@ -52,7 +52,7 @@ const flowPrincipal = addKeyword(['halo', 'ole', 'alo', 'Volver', 'regresar', 'm
         ],
         capture: true,
         delay: (0)
-    },null,[flowGracias, flowInfo, flowTasa, flowStatistics])
+    },null,[flowGracias, flowInfo, flowTasa])
 
 const main = async() => {
     const adapterDB = new MySQLAdapter({
@@ -62,7 +62,7 @@ const main = async() => {
         password: MYSQL_DB_PASSWORD,
         port: MYSQL_DB_PORT
     })
-    const adapterFlow = createFlow([flowPrincipal, flowFormulario, flowAdmin])
+    const adapterFlow = createFlow([flowPrincipal, flowFormulario, flowStatistics])
     const adapterProvider = createProvider(BaileysProvider)
     createBot({
         flow: adapterFlow,
