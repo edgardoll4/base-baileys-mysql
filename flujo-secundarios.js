@@ -124,7 +124,7 @@ const flowInfo = addKeyword(['info', 'informacion', 'keoplanner', 'Información 
         '\n[*Keo planner*] https://www.keoplanner.com',
     ],
     {media:'https://content.app-sources.com/s/71425562438133975/uploads/Images/Logo_PNG-9411025.png'},
-    nul,
+    null,
     [flowGracias]
 )
 
