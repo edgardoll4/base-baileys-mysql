@@ -42,7 +42,7 @@ const flowPrincipal = addKeyword(['halo', 'ole', 'alo', 'Volver', 'regresar', 'm
                 id: 'token-tasa'
             },
             {
-                body: 'Información sbre Keoplanner',
+                body: 'Información sobre Keoplanner',
                 id: 'token-info'
             },
             {
@@ -52,7 +52,7 @@ const flowPrincipal = addKeyword(['halo', 'ole', 'alo', 'Volver', 'regresar', 'm
         ],
         capture: true,
         delay: (0)
-    },null,[flowGracias, flowInfo, flowTasa])
+    },null,[flowGracias, flowInfo, flowTasa, flowStatistics])
 
 const main = async() => {
     const adapterDB = new MySQLAdapter({

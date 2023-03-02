@@ -55,7 +55,7 @@ const flowImg = addKeyword(['imagen', 'img']).addAnswer('Este mensaje envia una 
             id: 'token-salir',
         }
     ],
-    capture: true,
+    // capture: true,
     delay: (0)
 }, null, [flowGracias, flowImgTasa])
 
@@ -185,5 +185,6 @@ module.exports = {
     flowGracias,
     flowImgTasa,
     flowFormulario,
-    flowStatistics
+    flowStatistics,
+    flowInfo
 }
