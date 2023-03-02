@@ -62,26 +62,19 @@ const flowImg = addKeyword(['imagen', 'img']).addAnswer('Este mensaje envia una 
 }, null, [flowGracias, flowImgTasa])
 
 const flowStatistics = addKeyword(['estadistica', 'metrica'])
-    .addAnswer('Estamos procesando su solicitud.', {delay:(5)})
-    .addAnswer(['*Estadisticas de los ultimos 7 días*'],
-    {
+    .addAnswer('Estamos procesando su solicitud.', {
         media:'https://mpnecuador.files.wordpress.com/2014/06/website-analytics.png',
-        buttons: [
-            {
-                body: 'salir',
-                id: 'token-salir',
-            }
-        ],
         delay: (5)
     },
     async (ctx,{flowDynamic}) =>{
         console.log('Mensaje: ',ctx)
-        dataInit = luxon.DateTime.now().toUnixInteger()*1000;
+        dataInit = Number(ctx.messageTimestamp)*1000;
         // dataEnd = dateInit[Symbol.toPrimitive]('number');
-        okPlanner = '';
-        errorPlanner = '';
-        msgUser = '';
-        total = '';
+        let okPlanner;
+        let errorPlanner;
+        let msgUser;
+        let total;
+        let sinAccion;
         const statistic = await axios({
             method:'get',
             url:'https://api-ws-prod.herokuapp.com/api/chat/statistics-button-pressed/?end-time=' + dataInit + '&start-time=' + (Number(dataInit) - 604800000),
@@ -89,39 +82,51 @@ const flowStatistics = addKeyword(['estadistica', 'metrica'])
 
         const statisticHour = await axios({
             method:'get',
-            url:'https://api-ws-prod.herokuapp.com/api/chat/statistics/'+168,
+            url:'https://api-ws-prod.herokuapp.com/api/chat/statistics/168',
         })
 
+        // console.log('AAA: ',statistic.data);
+        // console.log('BBB: ',statisticHour.data);
+
         if (statistic){
-            total = statistic.countConfirmar;
-            asistir = statistic.countAsistir;
-            anular = statistic.countAnular;
-            ambos = statistic.countAmbos;
-            sinAccion = total - asistir - anular - sinAccion;
+            total = statistic.data.countConfirmar;
+            asistir = statistic.data.countAsistir;
+            anular = statistic.data.countAnular;
+            ambos = statistic.data.countAmbos;
+            sinAccion = total - asistir - anular - ambos;
         }
 
         if (statisticHour){
-            okPlanner = statisticHour.countSuccess;
-            errorPlanner = statisticHour.countFailBadRequest + statisticHour.countFailNotAcceptable + statisticHour.countFailNotFound + statisticHour.countFailUnauthorized + statisticHour.countFailConflict + statisticHour.countFailUnprocessableEntity + statisticHour.countFailOther;
-            msgUser = statisticHour.countMsgText;
+            okPlanner = statisticHour.data.countSuccess;
+            errorPlanner = statisticHour.data.countFailBadRequest + statisticHour.data.countFailNotAcceptable + statisticHour.data.countFailNotFound + statisticHour.data.countFailUnauthorized + statisticHour.data.countFailConflict + statisticHour.data.countFailUnprocessableEntity + statisticHour.data.countFailOther;
+            msgUser = statisticHour.data.countMsgText;
         }
 
-        return flowDynamic([`*Estadisticas de las plantillas de confirmaciones de reservas*
+        return flowDynamic([`*Estadisticas de los ultimos 7 días*
+            \n\n*Estadisticas de las plantillas de confirmaciones de reservas*
             \nTotal de plantillas enviadas: ${total}
             \n\nBotones presionados:
-            \nAsisti: ${asistir}
+            \nAsistir: ${asistir}
             \nAnular: ${anular}
             \nAmbos: ${ambos}
-            \nSin acciones: ${sinAccion}`,
-            `\n*staditicas del estatus de los botones presionados*,
+            \nSin acciones: ${sinAccion}
+            \n\n*Estaditicas del estatus de los botones presionados*,
             \nOK: ${okPlanner}
             \nError: ${errorPlanner}
-            \n\nCantidad de mensajes de textos escritos por el usuario: ${msgUser}`])
+            \nCantidad de mensajes de textos escritos por el usuario: ${msgUser}`],{media:'https://mpnecuador.files.wordpress.com/2014/06/website-analytics.png'})
 
-    },[flowGracias]
-    )
+    }
+    ).addAnswer('Esperamos sea de utilidad la infomación',{
+        buttons: [
+            {
+                body: 'salir',
+                id: 'token-salir',
+            },
+        ],   
+         media: 'https://mpnecuador.files.wordpress.com/2014/06/website-analytics.png'
+    },)
 
-const flowInfo = addKeyword(['info', 'informacion']).addAnswer(
+const flowInfo = addKeyword(['info', 'informacion', 'keoplanner']).addAnswer(
     [
         '🚀 Para más información le invito a ir al siguiente link.',
         '\n[*Keo planner*] https://www.keoplanner.com',

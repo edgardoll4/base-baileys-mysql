@@ -31,14 +31,14 @@ const MYSQL_DB_PORT = 7011
  */
 
 const flowPrincipal = addKeyword(['halo', 'ole', 'alo', 'Volver', 'regresar', 'menu', 'menu principal'])
-    .addAnswer('🙌 Hola bienvenido a este *Chatbot*')
+    .addAnswer('🙌 Bienvenido a este *Chatbot*')
     .addAnswer(
         [
             'Hola soy Keo su asistente virtual de Planner',
             '\nBienvenido estimado clinte',
         ],
         null,
-        null, [flowGracias]
+        null
     ).addAnswer(['Tenemos las siguientes opciones para seguir interactuando'], {
         buttons: [{
                 body: 'Saber la Tasa del día',
@@ -53,9 +53,37 @@ const flowPrincipal = addKeyword(['halo', 'ole', 'alo', 'Volver', 'regresar', 'm
                 id: 'token-salir'
             }
         ],
-        capture: true,
+        // capture: true,
         delay: (0)
     },null,[flowGracias, flowInfo, flowTasa])
+
+const flowAdmin = addKeyword(['admin', 'administracion', 'administración', 'administrador'])
+    .addAnswer('🙌 Bienvenido a este *Chatbot*')
+    .addAnswer(
+        [
+            '¡Hola soy Keo su asistente virtual de Planner!',
+            '\nBienvenido estimado administador',
+        ],
+        null,
+        null
+    ).addAnswer(['Tenemos las siguientes opciones para seguir interactuando'], {
+        buttons: [{
+                body: 'Estadistica',
+                id: 'token-statistic'
+            },
+            {
+                body: 'Keoplanner',
+                id: 'token-web'
+            },
+            {
+                body: 'Salir',
+                id: 'token-salir'
+            }
+        ],
+        // capture: true,
+        delay: (0)
+    },null,[flowGracias, flowInfo, flowStatistics])
+
 
 const main = async() => {
     const adapterDB = new MySQLAdapter({
@@ -65,7 +93,7 @@ const main = async() => {
         password: MYSQL_DB_PASSWORD,
         port: MYSQL_DB_PORT
     })
-    const adapterFlow = createFlow([flowPrincipal, flowFormulario, flowStatistics])
+    const adapterFlow = createFlow([flowPrincipal, flowAdmin ])
     const adapterProvider = createProvider(BaileysProvider)
     createBot({
         flow: adapterFlow,
