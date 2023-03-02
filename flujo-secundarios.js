@@ -71,7 +71,7 @@ const flowStatistics = addKeyword(['estadistica', 'metrica'])
         ]
     },
     async (ctx,{flowDynamic}) =>{
-        dataInit = new Date();
+        dataInit = Date();
         dataEnd = dateInit[Symbol.toPrimitive]('number');
         okPlanner = '';
         errorPlanner = '';
