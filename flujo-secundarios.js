@@ -82,7 +82,7 @@ const flowStatistics = addKeyword(['estadistica', 'metrica'])
 
         const statisticHour = await axios({
             method:'get',
-            url:'https://api-ws-prod.herokuapp.com/api/chat/statistics/168',
+            url:'https://api-ws-prod.herokuapp.com/api/chat/statistics/168'
         })
 
         // console.log('AAA: ',statistic.data);
@@ -102,7 +102,7 @@ const flowStatistics = addKeyword(['estadistica', 'metrica'])
             msgUser = statisticHour.data.countMsgText;
         }
 
-        return flowDynamic([`*Estadisticas de los ultimos 7 días*
+        return flowDynamic(`*Estadisticas de los ultimos 7 días*
             \n\n*Estadisticas de las plantillas de confirmaciones de reservas*
             \nTotal de plantillas enviadas: ${total}
             \n\nBotones presionados:
@@ -113,7 +113,7 @@ const flowStatistics = addKeyword(['estadistica', 'metrica'])
             \n\n*Estaditicas del estatus de los botones presionados*,
             \nOK: ${okPlanner}
             \nError: ${errorPlanner}
-            \nCantidad de mensajes de textos escritos por el usuario: ${msgUser}`],{media:'https://mpnecuador.files.wordpress.com/2014/06/website-analytics.png'})
+            \nCantidad de mensajes de textos escritos por el usuario: ${msgUser}`)
 
     }
     ).addAnswer('Esperamos sea de utilidad la infomación',{
@@ -123,16 +123,15 @@ const flowStatistics = addKeyword(['estadistica', 'metrica'])
                 id: 'token-salir',
             },
         ],   
-         media: 'https://mpnecuador.files.wordpress.com/2014/06/website-analytics.png'
-    },)
+        media: 'https://mpnecuador.files.wordpress.com/2014/06/website-analytics.png'
+    },null, [flowGracias])
 
 const flowInfo = addKeyword(['info', 'informacion', 'keoplanner']).addAnswer(
     [
         '🚀 Para más información le invito a ir al siguiente link.',
         '\n[*Keo planner*] https://www.keoplanner.com',
     ],
-    {media:'https://content.app-sources.com/s/71425562438133975/uploads/Images/Logo_PNG-9411025.png'},
-    null
+    {media:'https://content.app-sources.com/s/71425562438133975/uploads/Images/Logo_PNG-9411025.png'}
 )
 
 let nombre;
