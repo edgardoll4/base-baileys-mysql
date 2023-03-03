@@ -151,7 +151,6 @@ const flowFormulario = addKeyword(['Hola','⬅️ Volver al Inicio'])
             if (ctx.body == '❌ Cancelar solicitud')
              return endFlow({body: '❌ Su solicitud ha sido cancelada ❌',    // Aquí terminamos el flow si la condicion se comple
                  buttons:[{body:'⬅️ Volver al Inicio' }]                      // Y además, añadimos un botón por si necesitas derivarlo a otro flow
-
             
             })
             nombre = ctx.body
@@ -167,7 +166,6 @@ const flowFormulario = addKeyword(['Hola','⬅️ Volver al Inicio'])
                 return endFlow({body: '❌ Su solicitud ha sido cancelada ❌',
                     buttons:[{body:'⬅️ Volver al Inicio' }]
 
-
         })
         apellidos = ctx.body
         return flowDynamic(`Perfecto *${nombre}*, por último...`)
@@ -182,7 +180,6 @@ const flowFormulario = addKeyword(['Hola','⬅️ Volver al Inicio'])
                 return endFlow({body: '❌ Su solicitud ha sido cancelada ❌',
                       buttons:[{body:'⬅️ Volver al Inicio' }]
                 })
-
 
                 telefono = ctx.body
                 await delay(2000)
