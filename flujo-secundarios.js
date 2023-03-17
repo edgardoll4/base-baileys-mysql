@@ -12,12 +12,9 @@ const flowGracias = addKeyword(['gracias', 'grac', 'salir']).addAnswer(
 )
 
 const flowImgTasa = addKeyword(['tasa del dia','Ver tasa del día']).addAnswer('Tasa del día', {
-    media: 'https://drive.google.com/file/d/19dQ5te_ocfVau2-X_vgvsezvgIGZcJkz/view',
+    media: 'https://i.postimg.cc/WbTg7bt2/B8744045-8653-45-B1-8783-EAC10-A91-A649.png',
 }).addAnswer('¿Qué desea hacer?', {
-    buttons: [{
-            body: 'menu principal',
-            id: 'token-menu',
-        },
+    buttons: [
         {
             body: 'salir',
             id: 'token-salir',
@@ -30,10 +27,7 @@ const flowImgTasa = addKeyword(['tasa del dia','Ver tasa del día']).addAnswer('
 const flowTasa = addKeyword(['Ta5sa','tas5a']).addAnswer(
     ['Elija un país:','Venezuela','Perú','Chile','Argentina','Colombia','Ecuador', 'Otro', '\n Para siguiente saber la tasa del mismo.'],
     {
-        buttons: [{
-                body: 'menu principal',
-                id: 'token-menu',
-            },
+        buttons: [
             {
                 body: 'salir',
                 id: 'token-salir',
@@ -46,7 +40,7 @@ const flowTasa = addKeyword(['Ta5sa','tas5a']).addAnswer(
 )
 
 const flowImg = addKeyword(['tasa', 'Tasa del día']).addAnswer('Este mensaje envia una imagen', {
-    media: 'https://content.app-sources.com/s/71425562438133975/uploads/Images/Foto4-9413559.png',
+    media: 'https://i.postimg.cc/WbTg7bt2/B8744045-8653-45-B1-8783-EAC10-A91-A649.png',
 }).addAnswer('Para volver al fluo principal', {
     buttons: [{
             body: 'regresar',
@@ -107,13 +101,13 @@ const flowStatistics = addKeyword(['estadistica', 'metrica'])
             \nTotal de plantillas enviadas: ${total}
             \n\nBotones presionados:
             \nAsistir: ${asistir}
-            Anular: ${anular}
-            Ambos: ${ambos}
-            Sin acciones: ${sinAccion}
+Anular: ${anular}
+Ambos: ${ambos}
+Sin acciones: ${sinAccion}
             \n\n*Estaditicas del estatus de los botones presionados*,
             \nOK: ${okPlanner}
-            Error: ${errorPlanner}
-            Cantidad de mensajes de textos escritos por el usuario: ${msgUser}`)
+Error: ${errorPlanner}
+Cantidad de mensajes de textos escritos por el usuario: ${msgUser}`)
 
     },
     [flowGracias])
