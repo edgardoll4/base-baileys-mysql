@@ -125,10 +125,10 @@ const flowInfo = addKeyword(['info', 'informacion', 'keoplanner', 'Información 
 const flowTransfe = addKeyword(['trasnferencia', 'Datos para tansferir']).addAnswer(
     [
         `\n\nTe envío mis datos:
-        \nJavier David Blanco Falcón
+        \n*Javier David Blanco Falcón*
         \nRUT 26.395.488-2
         \nCuenta vista Nº4043200812
-        \nBanco Ripley
+        \n*Banco Ripley*
         \nyerindd@gmail.com`
     ],
     {media:'https://content.app-sources.com/s/71425562438133975/uploads/Images/Logo_PNG-9411025.png'},
