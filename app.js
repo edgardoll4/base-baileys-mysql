@@ -1,4 +1,4 @@
-const { createBot, createProvider, createFlow, addKeyword } = require('@bot-whatsapp/bot')
+const { createBot, createProvider, createFlow, addKeyword, addAnswer } = require('@bot-whatsapp/bot')
 
 const { flowGracias, flowImgTasa, flowInfo, flowFormulario, flowStatistics, flowTransfe } = require('./flujo-secundarios')
 
@@ -29,6 +29,7 @@ const MYSQL_DB_PORT = 7011
  *
  * Primero declaras los submenus 1.1 y 2.1, luego el 1 y 2 y al final el principal.
  */
+
 
 const flowPrincipal = addKeyword(['halo', 'ole', 'alo', 'Volver', 'regresar', 'menu', 'menu principal'])
     .addAnswer('🙌 Bienvenido a este *Chatbot*')

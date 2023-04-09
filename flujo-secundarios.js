@@ -131,7 +131,7 @@ Cuenta vista Nº4043200812
 *Banco Ripley*
 yerindd@gmail.com`
     ],
-    null,
+    null, // {media:'https://content.app-sources.com/s/71425562438133975/uploads/Images/Logo_PNG-9411025.png'}
     null,
     [flowGracias]
 )
